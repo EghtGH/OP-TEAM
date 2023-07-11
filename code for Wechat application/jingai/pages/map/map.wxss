@@ -1,0 +1,49 @@
+/* Global styles */
+.view-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* Set the view height to fill the entire viewport */
+}
+
+/* Top section styles */
+.view-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-c {
+  width: 90%;
+  height: 40rpx;
+  margin-top: 20rpx;
+  padding: 5rpx;
+  font-size: 16rpx;
+  border: 1px solid #b65151;
+  border-radius: 4rpx;
+}
+
+/* Search section styles */
+.item-title {
+  font-size: 18rpx;
+  color: #b65151;
+  margin-top: 20rpx;
+}
+
+.item-details {
+  font-size: 14rpx;
+  color: #000;
+}
+
+/* Map section styles */
+#ofoMap {
+  width: 100%;
+  height: 100%; /* Make the map fill the entire available height */
+}
+
+/* Others */
+.item-title,
+.item-details {
+  width: 90%;
+  text-align: center;
+}

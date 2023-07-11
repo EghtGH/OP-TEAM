@@ -1,0 +1,23 @@
+
+<view class="container">
+  <view class="bg-fff p-lr30 border-t">
+   <view class="ipt-wrap border-b flex ai-center">
+      <label for="" class="font14">topic</label>
+      <input type="text" class="ml40 flex1" maxlength="64" placeholder="请输入Topic" value="{{topic}}" bindinput="getTopic"></input>
+    </view>
+    <view class="ipt-wrap border-b flex ai-center">
+      <label for="" class="font10">内容</label>
+      <textarea auto-focus="true" style="height: 15em" maxlength="500" placeholder="请输入消息内容" value="{{payload}}" bindinput="getPayload"/>
+    </view>
+  </view>
+
+    <view class="page-section">
+      <view class="weui-cells__title">日志</view>
+        <view class="textarea-wrp">
+          <textarea auto-focus="true" auto-height="true"  maxlength="-1" style="height: 10em"  value="{{log}}"/>
+        </view>
+    </view>
+  <view class="combtn font16 color-fff _w100 bg-btn" bindtap="reportData">
+  上报数据
+  </view>
+</view>

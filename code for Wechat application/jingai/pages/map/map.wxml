@@ -1,0 +1,29 @@
+<view class='view-c'>
+  <view class='view-top'>
+    <text style="font-size: 24rpx; margin-top: 40rpx; color: #b65151">当前：{{district}}</text>
+  </view>
+  
+  <view wx:for="{{suggestion}}" wx:key="index" class="{{showview?'hidden':'view-center'}}">
+    <view>
+      <view class='item-title' bindtap="backfill" id="{{index}}">{{item.title}}</view>
+      <view class='item-details'>{{item.addr}}</view>
+    </view>
+  </view>
+
+  <map
+    id="ofoMap"
+    longitude="{{longitude}}"
+    latitude="{{latitude}}"
+    markers="{{markers}}"
+    scale="{{scale}}"
+    covers="{{covers}}"
+    show-location
+    class="{{showview?'map-c':'hidden'}}"
+    bindregionchange="bindregionchange"
+    controls="{{controls}}"
+    bindcontroltap='bindcontroltap'
+    bindmarkertap="handleMarkerTap"
+  >
+  </map>
+  
+</view>

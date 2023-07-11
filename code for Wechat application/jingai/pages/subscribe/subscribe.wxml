@@ -1,0 +1,51 @@
+<view class="logo" style="display: flex; justify-content: center; align-items: center;">
+  <image src='/images/HiSpark.png' style="width: 180px; height: 80px;"></image>
+</view>
+<view class="container">
+  <view class="bg-fff p-lr30 border-t">
+    <view class="ipt-wrap border-b flex ai-center">
+      <label for="" class="font16">Topic</label>
+      <input type="text" class="ml50 flex1" maxlength="64" placeholder="请输入Topic" value="{{topic}}" bindinput="getTopic"></input>
+    </view>
+  </view>
+  
+  <view style="display:flex; flex-direction:row; justify-content: center; align-items: center; font-weight: bold; font-size: 20px; margin-top: 8px;">
+    获取云端数据
+  </view>
+  
+  <view class="ipt-wrap border-b flex ai-center">
+  </view>
+  
+  <view class="cell">
+    <view class="left">温度</view>
+    <view class="right">{{temp}}</view>
+  </view>
+  <view class="cell">
+    <view class="left">覆盖状态</view>
+    <view class="right">{{Cover_Status}}</view>
+
+
+  </view>
+
+  <view class="cell">
+    <view class="left">水位</view>
+    <view class="right">{{Water_level}}</view>
+  </view>
+  <view class="cell">
+    <view class="left">设备号</view>
+    <view class="right">{{deviceid}}</view>
+  </view>
+  <view class="cell">
+    <view class="left">经纬度</view>
+    <view class="right">{{longitude}}, {{dimension}}</view>
+  </view>
+  
+  <view class="combtn font16 color-fff _w100 bg-btn" bindtap="subscribe">
+    订阅Topic
+  </view>
+  
+  <modal wx:if="{{showModal}}" title="提示" showCancel="{{false}}" bindconfirm="closePopup">
+    订阅成功
+  </modal>
+
+</view>

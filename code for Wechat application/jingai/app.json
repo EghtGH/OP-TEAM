@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/connect/connect",
+    "pages/publish/publish",
+    "pages/subscribe/subscribe",
+    "pages/map/map"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "设备互联",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+
+  "tabBar": {
+    "color": "#FCFCFC",
+    "selectedColor": "#51A937",
+    "borderStyle": "white",
+    "backgroundColor": "#191919",
+    "list": [
+      {
+        "pagePath": "pages/connect/connect",
+        "iconPath": "images/icon_cloud_dark.png",
+        "selectedIconPath": "images/icon_cloud_HL.png",
+        "text": "连接到平台"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "iconPath": "images/icon_cloud_dark.png",
+        "selectedIconPath": "images/icon_cloud_HL.png",
+        "text": "上报数据"
+      },
+      {
+        "pagePath": "pages/subscribe/subscribe",
+        "iconPath": "images/icon_cloud_dark.png",
+        "selectedIconPath": "images/icon_cloud_HL.png",
+        "text": "订阅topic"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "iconPath": "images/icon_cloud_dark.png",
+        "selectedIconPath": "images/icon_cloud_HL.png",
+        "text": "地图"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

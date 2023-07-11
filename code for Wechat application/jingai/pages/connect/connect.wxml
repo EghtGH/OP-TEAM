@@ -1,0 +1,25 @@
+<view class="logo" style="display: flex; justify-content: center; align-items: center;">
+  <image src='/images/HiSpark.png' style="width: 180px; height: 80px;"></image>
+</view>
+<view class="container">
+  <view class="bg-fff p-lr30 border-t">
+    <view class="ipt-wrap border-b flex ai-center">
+      <label for="" class="font15">平台地址</label>
+      <input type="text" class="ml40 flex1" maxlength="64" placeholder="请输入平台地址" value="{{host}}" bindinput="getHost"></input>
+    </view>
+     <view class="ipt-wrap border-b flex ai-center">
+      <label for="" class="font15">设备ID</label>
+      <input type="text" class="ml40 flex1" maxlength="64" placeholder="请输入设备ID" value="{{deviceId}}" bindinput="getDeviceId"></input>
+    </view>
+    <view class="ipt-wrap border-b flex ai-center">
+      <label for="" class="font15">设备密码</label>
+      <input type="text" class="ml40 flex1" maxlength="32" password="true" placeholder="请输入设备密码" value="{{password}}" bindinput="getPassword"></input>
+    </view>
+  </view>
+  
+
+  <view class="combtn font16 color-fff _w100 bg-btn" bindtap="connect">连接到平台</view>
+  <modal wx:if="{{showModal}}" title="提示" showCancel="{{false}}" bindconfirm="closePopup">
+  连接成功
+</modal>
+</view>
