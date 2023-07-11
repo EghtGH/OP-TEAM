@@ -1,6 +1,6 @@
 # 说明
 
-### 在代码中，应有需求修改了SDK中的一些部分：
+### 在代码中，因有需求，修改了SDK中的一些部分：
 
 - 修改`“\device\hisilicon\hispark_pegasus\sdk_liteos\tools\nvtool\xml_file”`下的`mss_nvi_db.xml`，于：
 
