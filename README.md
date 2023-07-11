@@ -1,2 +1,8 @@
-# OP-TEAM
-HI3861 code for SOCChina compititon
+# 嵌入式竞赛海思赛道物联网应用
+OP TEAM
+文件中包含：
+1、基于HI3861开发的智慧井盖的设备端代码
+2、微信小程序的应用端代码
+3、基于传智教育ITCAST-HI3861芯片的PCB开发板
+3、基于NT3H1101W0FHKH的NFC卡
+4、使用小熊派开发板的3D建模外壳
