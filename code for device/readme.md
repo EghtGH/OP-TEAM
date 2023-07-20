@@ -42,7 +42,8 @@
   }int_pos_my;
   ```
 
-- 修改`int **WifiConnect**(const char *ssid, const char *psk)`函数
+- 修改`int **WifiConnect**(const char *ssid, const char *psk)`函数：重复操作连接NFC写入的wifi信息，在多次重复后，连接至出厂（最原始）的WIFI信息。
+- 
 
-- 添加`void **NT3H1101_Read_Userpages**(uint8_t pagenumber,uint8_t *outbuf)`函数
+- 添加`void **NT3H1101_Read_Userpages**(uint8_t pagenumber,uint8_t *outbuf)`函数，功能为读取NFC写入的信息，包含乱码，因此需要使用其他函数进行格式化与读取数据。
 
